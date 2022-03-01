@@ -2,3 +2,56 @@
 The main idea to create this project is to help me use everything I've been learning about Sql. I am not aiming to make a solid Data Analysis project,
 but I am hoping this will get me there some day. 
 
+To take a look the reigning champion in the 100 metres Backstroke Swimming Men field:
+
+SELECT Name, EVENT, Games, 
+LAG(Name) OVER(ORDER BY Games ASC) as Last_champ
+FROM olympics
+WHERE (Medal = 'Gold') AND Year > 1950 AND Event LIKE '%100 metres Backstroke' AND Event like '%Swimming Men%'
+ORDER BY Games;
+
+Name	Event	Games	Last_champ
+Yoshinobu "Yoshi" Oyakawa	Swimming Men's 100 metres Backstroke	1952 Summer	
+David Egmont Theile	Swimming Men's 100 metres Backstroke	1956 Summer	Yoshinobu "Yoshi" Oyakawa
+David Egmont Theile	Swimming Men's 100 metres Backstroke	1960 Summer	David Egmont Theile
+Roland Matthes	Swimming Men's 100 metres Backstroke	1968 Summer	David Egmont Theile
+Roland Matthes	Swimming Men's 100 metres Backstroke	1972 Summer	Roland Matthes
+John Phillips Naber	Swimming Men's 100 metres Backstroke	1976 Summer	Roland Matthes
+Bengt Baron	Swimming Men's 100 metres Backstroke	1980 Summer	John Phillips Naber
+Richard John "Rick" Carey	Swimming Men's 100 metres Backstroke	1984 Summer	Bengt Baron
+Daichi Suzuki	Swimming Men's 100 metres Backstroke	1988 Summer	Richard John "Rick" Carey
+Marcus "Mark" Tewksbury	Swimming Men's 100 metres Backstroke	1992 Summer	Daichi Suzuki
+Jeffrey Norman "Jeff" Rouse	Swimming Men's 100 metres Backstroke	1996 Summer	Marcus "Mark" Tewksbury
+Lenny Krayzelburg	Swimming Men's 100 metres Backstroke	2000 Summer	Jeffrey Norman "Jeff" Rouse
+Aaron Wells Peirsol	Swimming Men's 100 metres Backstroke	2004 Summer	Lenny Krayzelburg
+Aaron Wells Peirsol	Swimming Men's 100 metres Backstroke	2008 Summer	Aaron Wells Peirsol
+Matthew "Matt" Grevers	Swimming Men's 100 metres Backstroke	2012 Summer	Aaron Wells Peirsol
+Ryan Murphy	Swimming Men's 100 metres Backstroke	2016 Summer	Matthew "Matt" Grevers
+
+
+Filtering out just the reigning champions: 
+
+Name	EVENT	Games	Last_champ
+David Egmont Theile	Swimming Men's 100 metres Backstroke	1960 Summer	David Egmont Theile
+Roland Matthes	Swimming Men's 100 metres Backstroke	1972 Summer	Roland Matthes
+Aaron Wells Peirsol	Swimming Men's 100 metres Backstroke	2008 Summer	Aaron Wells Peirsol
+
+
+It appears that these swimmers won the two consecutive events, in these and the one previous. 
+
+Ranking the most medal winning athletes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
