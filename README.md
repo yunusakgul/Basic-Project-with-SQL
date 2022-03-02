@@ -10,23 +10,13 @@ I am going to use the movies dataset, I found on Kaggle, also can be found it re
 
 Here is a summary of data types and columns:
 
-table_name	column_name	col_type
-df_movie_ratings	field1	INTEGER
-df_movie_ratings	movie	TEXT
-df_movie_ratings	year	INTEGER
-df_movie_ratings	imdb	REAL
-df_movie_ratings	metascore	INTEGER
-df_movie_ratings	votes	INTEGER
-df_movie_ratings	genre	TEXT
-df_movie_ratings	runtime	TEXT
-df_movie_ratings	gross	REAL
-df_movie_ratings	n_imdb	REAL
-movie_ratings	field1	INTEGER
-movie_ratings	movie	TEXT
-movie_ratings	year	TEXT
-movie_ratings	imdb	REAL
-movie_ratings	metascore	INTEGER
-movie_ratings	votes	INTEGER
-movie_ratings	genre	TEXT
-movie_ratings	runtime	INTEGER
-movie_ratings	gross	TEXT
+![image](https://user-images.githubusercontent.com/66702893/156434648-e1bebb10-3b61-4792-b628-2242d324b56a.png)
+
+
+
+First I would like to order most liked movies: 
+
+Datasets I downloaded was splitted in two, covering different years. I needed to combine this in order to get one. 
+
+
+![image](https://user-images.githubusercontent.com/66702893/156446749-30c86139-b798-486d-b6a4-a8c3e687ac64.png)
