@@ -24,3 +24,9 @@ Datasets I downloaded was splitted in two, covering different years. I needed to
 With Ranking column:
 
 ![image](https://user-images.githubusercontent.com/66702893/156563853-ffad0cb9-82cf-4f89-a1cf-7e1fac3c9848.png)
+
+
+It would be nice to compare most winning genres, to see there is a popular or more profitable than the others. 
+
+
+
