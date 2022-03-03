@@ -20,3 +20,7 @@ Datasets I downloaded was splitted in two, covering different years. I needed to
 
 
 ![image](https://user-images.githubusercontent.com/66702893/156446749-30c86139-b798-486d-b6a4-a8c3e687ac64.png)
+
+With Ranking column:
+
+![image](https://user-images.githubusercontent.com/66702893/156563853-ffad0cb9-82cf-4f89-a1cf-7e1fac3c9848.png)
