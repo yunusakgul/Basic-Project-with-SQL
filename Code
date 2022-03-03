@@ -1,0 +1,48 @@
+
+
+To get insgiht of the data: 
+
+SELECT  m.name as table_name, t.name as column_name, t.type as col_type
+FROM sqlite_master AS m
+JOIN PRAGMA_table_info(m.name) AS t
+ORDER BY m.name, t.cid;
+
+
+--------------
+
+
+Getting the best 10 movies according to the imdb rating:
+
+
+CREATE TABLE allmovies AS 
+SELECT * FROM movie_ratings UNION SELECT field1,movie,year,imdb,metascore,votes,genre,runtime,gross FROM df_movie_ratings;
+
+SELECT DISTINCT(movie), imdb, metascore
+FROM allmovies
+ORDER BY imdb DESC, metascore DESC
+LIMIT 10;
+
+*****************
+
+In order to Rank those movies I needed to get rid of the duplicates and create a new temporary table called allmovie:
+
+WITH movies AS(
+SELECT movie, votes as votes, imdb, genre, replace(replace(year,'(',''),')','') as year, replace(runtime, ' min', '')as runtime, gross,metascore
+FROM allmovies),
+allmovie AS (
+SELECT DISTINCT(movie), imdb, genre, year, runtime FROM movies ORDER BY movie)
+
+SELECT movie, imdb, RANK() OVER(ORDER BY imdb DESC) as ranking FROM allmovie LIMIT 15;
+
+It would be inefficient to use these kind of query through out all the analysis, but I am going
+
+
+
+
+
+
+
+
+
+
+
