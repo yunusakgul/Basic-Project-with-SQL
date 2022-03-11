@@ -28,5 +28,17 @@ With Ranking column:
 
 It would be nice to compare most winning genres, to see there is a popular or more profitable than the others. 
 
+genre	gross
+Action,Adventure,Sci-Fi	7493297800.0
+Action,Adventure,Drama	6866984000.0
+Action,Adventure,Fantasy	6084061000.0
+Action,Adventure,Sci-Fi	5600476528.0
+Action,Adventure,Sci-Fi	5430523856.0
+Action,Adventure,Sci-Fi	5218165000.0
+Action,Adventure,Sci-Fi	4986236376.0
+Action,Adventure,Fantasy	4961451056.0
+Animation,Action,Adventure	4868653952.0
+Animation,Adventure,Drama	4320636792.0
+![image](https://user-images.githubusercontent.com/66702893/157967221-41598f9b-3125-4b72-8cc4-3c8c166b63ef.png)
 
 
