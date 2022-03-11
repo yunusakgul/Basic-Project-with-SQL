@@ -34,8 +34,35 @@ SELECT DISTINCT(movie), imdb, genre, year, runtime FROM movies ORDER BY movie)
 
 SELECT movie, imdb, RANK() OVER(ORDER BY imdb DESC) as ranking FROM allmovie LIMIT 15;
 
-It would be inefficient to use these kind of query through out all the analysis, but I am going
+It would be inefficient to use these kind of query through out all the analysis, but I am going to keep this.
 
+
+
+Comparing the total gross according to the imdb points:
+
+with movie_divided AS (SELECT DISTINCT(movie), imdb, gross, ntile(20) OVER(ORDER BY imdb DESC) as order_imdb
+FROM allmovies
+WHERE gross NOT NULL
+ORDER BY imdb DESC)
+
+
+SELECT order_imdb ,round(avg(imdb),2) as average_imdb, sum(gross) as gross
+FROM movie_divided
+GROUP BY order_imdb
+ORDER BY gross DESC;
+
+Compating the same thing with considering only movies after 2000:
+
+with movie_divided AS (SELECT DISTINCT(movie), imdb, gross, ntile(20) OVER(ORDER BY imdb DESC ) as order_imdb
+FROM allmovies
+WHERE gross NOT NULL AND year > 2000
+ORDER BY imdb DESC)
+
+
+SELECT order_imdb ,round(avg(imdb),2) as average_imdb, sum(gross) as gross
+FROM movie_divided
+GROUP BY order_imdb
+ORDER BY gross DESC;
 
 
 
