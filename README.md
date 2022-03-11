@@ -34,12 +34,12 @@ It would be nice to compare most winning genres, to see there is a popular or mo
 It appears that Action and Adventure are involved in most winning combinations.
 
 
-I would like to investigate the relationship between imdb points and gross. Did movies with higher imdb points earn more than the others? I am going to divide this question in two, because it wouldn't be fair to compare old movies in this perspective considering viewers did not have access to imdb. So I am going to calculate another one with the movies released after 2000. 
+I would like to investigate the relationship between imdb points and gross. Did movies with higher imdb points earn more than the others? I am going to divide this question in two, because it wouldn't be fair to compare old movies with this perspective considering viewers did not have access to imdb. So I am going to calculate the second one with the movies released after 2000. 
 
 
-When this data is divided into 20 according to the order of imdb descending and not including movies without a gross information, this conclusion appears. It doesn't seem like there is a connection with imdb points and total earning. Once again I should emphasize most movies were released before imdb was ever founded, so this can be misleading. 
+When this data is divided into 20 according to the descending order of imdb points and not including movies without a gross information, this conclusion appears. It doesn't seem like there is a connection with imdb points and total earnings. Once again I should emphasize most loved movies were released before imdb was ever founded, so this can be misleading. 
 
-It is also suprising movies with second highest imdb points are all the way back in this list.
+It is also suprising that movies with second highest imdb points are all the way back in this list.
 
 
 ![image](https://user-images.githubusercontent.com/66702893/157973958-92843620-a9b0-4549-b637-3287dff325ca.png)
