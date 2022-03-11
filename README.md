@@ -28,17 +28,30 @@ With Ranking column:
 
 It would be nice to compare most winning genres, to see there is a popular or more profitable than the others. 
 
-genre	gross
-Action,Adventure,Sci-Fi	7493297800.0
-Action,Adventure,Drama	6866984000.0
-Action,Adventure,Fantasy	6084061000.0
-Action,Adventure,Sci-Fi	5600476528.0
-Action,Adventure,Sci-Fi	5430523856.0
-Action,Adventure,Sci-Fi	5218165000.0
-Action,Adventure,Sci-Fi	4986236376.0
-Action,Adventure,Fantasy	4961451056.0
-Animation,Action,Adventure	4868653952.0
-Animation,Adventure,Drama	4320636792.0
-![image](https://user-images.githubusercontent.com/66702893/157967221-41598f9b-3125-4b72-8cc4-3c8c166b63ef.png)
+
+![image](https://user-images.githubusercontent.com/66702893/157967528-e3320d0a-f5a3-40cf-90bc-11d1e2b0789a.png)
+
+It appears that Action and Adventure are involved in most winning combinations.
+
+
+I would like to investigate the relationship between imdb points and gross. Did movies with higher imdb points earn more than the others? I am going to divide this question in two, because it wouldn't be fair to compare old movies in this perspective considering viewers did not have access to imdb. So I am going to calculate another one with the movies released after 2000. 
+
+
+When this data is divided into 20 according to the order of imdb descending and not including movies without a gross information, this conclusion appears. It doesn't seem like there is a connection with imdb points and total earning. Once again I should emphasize most movies were released before imdb was ever founded, so this can be misleading. 
+
+It is also suprising movies with second highest imdb points are all the way back in this list.
+
+
+![image](https://user-images.githubusercontent.com/66702893/157973958-92843620-a9b0-4549-b637-3287dff325ca.png)
+
+
+Let's see this for the after 2000 releasing:
+
+![image](https://user-images.githubusercontent.com/66702893/157974926-ea853c06-19bb-43c7-a9eb-8cf1de313e74.png)
+
+Including movies released after 2000 seems more reasonable, but table is still diversed comparing to the imdb points. It is hard to say movies with greater points earned more than the lower ones. Other things related to the cinema should be considered such as marketing, actors who were involved. A movie might be well profitable just because famous actors were in it. 
+
+
+
 
 
