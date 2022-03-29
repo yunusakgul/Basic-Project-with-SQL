@@ -52,6 +52,3 @@ Let's see this for the after 2000 releasing:
 Including movies released after 2000 seems more reasonable, but table is still diversed comparing to the imdb points. It is hard to say movies with greater points earned more than the lower ones. Other things related to the cinema should be considered such as marketing, actors who were involved. A movie might be well profitable just because famous actors were in it. 
 
 
-
-
-
